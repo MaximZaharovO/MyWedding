@@ -1,5 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 246, 210);
+}
+
 .App {
   text-align: center;
+
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0 15px;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -14,14 +33,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a8839d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
+  background: top / cover no-repeat url("image.jpg");
+  
+  margin-bottom: 24px;
 }
 
 .App-link {
@@ -35,4 +57,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+section{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+  margin: 0 auto;
+}
+
+section:last-child {
+  margin-bottom: 24px;
+}
+
+.playbtn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.playbtn .mute, .playbtn .unmute{
+  height: 45px;
+  width: 45px;
+}
+
+.mute {
+  background: center / cover no-repeat url("mute.svg");
+}
+.unmute {
+  background: center / cover no-repeat url("unmute.svg");
+}
+
+.app-header-back{
+  background: center / cover no-repeat url("back.jpg");
 }
