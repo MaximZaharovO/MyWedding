@@ -1,6 +1,7 @@
 import './App.css';
-import React, {useState} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import { Timer } from './Timer';
+import Time from './Timea';
 
 
 function App() {
@@ -18,7 +19,15 @@ function App() {
     }
     setIsAudio(prev => !prev)
   }
+  const [guestsHeight, setGuestsHeight] = useState(0)
+  const [wePicRefHeight, setWePicRefHeight] = useState(0)
+  const guestsRef = useRef(null)
+  const wePicRef = useRef(null)
 
+  useEffect(() => {
+    setGuestsHeight(guestsRef.current.clientHeight)
+    setWePicRefHeight(wePicRef.current.clientHeight)
+  })
   
 
   return (
@@ -31,15 +40,59 @@ function App() {
             ? <div className={"mute"}></div>
             : <div className={"unmute"}></div>}
       </div>
-      <div className="App-header"></div>
-      <section className={cl}>
-        <div className='mb-12'>Судьба дарит нам самый важный день в жизни — день, когда мы станем семьёй!
-          И нам так хочется разделить это счастье с теми, кто для нас по-настоящему дорог.
-          Ваше присутствие сделает этот день ещё теплее и радостнее!
-          Ждём вас на празднике — будем вместе радоваться, смеяться и создавать #memories, которые останутся с нами навсегда.
+      <div className="App-header">
+        <div className='App-header__top'>
+          <span className='mx-2'>Все начинается с любви</span>
+          <span className='mx-2'>Все начинается с любви</span>
+          <span className='mx-2'>Все начинается с любви</span>
+          <span className='mx-2'>Все начинается с любви</span>
         </div>
-        <Timer end={new Date(2025, 6, 19, 13, 20)}/>
-      </section>
+        <div className='App-header__body_wrap'>
+          <div className='App-header__body'>
+            <div className='ring-pic'>
+              <img src="Component 4.png"></img>
+            </div>
+            <div className='we-marying__title'>МЫ ЖЕНИМСЯ</div>
+            <div className='we-marying__subtitle'>СОФА + МАКСИМ</div>
+            <div ref={wePicRef} className='we-pic'>
+              <img src="Component 5.png"></img>
+              <div ref={guestsRef}  className='guests-text__wrapper'>
+                <div className='guests-text__title'>Дорогие гости!</div>
+                <div className='guests-text__text'>
+                  Судьба дарит нам самый важный день в жизни — день, когда мы станем семьёй! 
+                  И нам так хочется разделить это счастье с теми, кто для нас по-настоящему дорог. 
+                  Ваше присутствие сделает этот день ещё теплее и радостнее! 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='timing__section'>
+        <div className='timing__section-title'>
+          <img style={{width: 136}} src='dove.png'/>
+          <div className='timing__section-when_question'>
+            К<span>О<img src='love.png'/></span>ГДА?
+          </div>
+          <div className='timing__section-when'>
+            <div className='timing__section-when_date'>19</div>
+            <div className='timing__section-when_my'>
+              <div className='timing__section-when_month'>июля</div>
+              <div className='timing__section-when_year'>2025</div>
+            </div>
+          </div>
+        </div>
+        <div className='timing__section-when-block'>
+          <div style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyItems: 'center'
+          }}>
+            <div className='timing__section-when-block_title'>ВО СКОЛЬКО?</div>
+            <Time/>
+          </div>
+        </div>
+      </div>
       <section className={cl}>
         <div className='my-3'>
           <div>
@@ -111,6 +164,8 @@ function App() {
             <label for="readyToWork" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Мечтаю помочь с приготовлениями!</label>
           </div>
         </form>
+        <Timer end={new Date(2025, 6, 19, 13, 20)}/>
+
       </section>
     </div>
   );

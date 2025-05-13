@@ -2,20 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: LCChalk;
+  src: url(LCChalk.ttf);
+}
+@font-face {
+  font-family: BirchCTT;
+  src: url(BirchCTT.ttf);
+}
+
+@font-face {
+  font-family: Kosko;
+  src: url(Kosko.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 0;
+  line-height: 1;
 }
 
 body {
-  background-color: rgb(252, 246, 210);
+  background-color: #FFF8DC;
 }
 
 .App {
   text-align: center;
 
-  max-width: 800px;
+  max-width: 1134px;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0 15px;
   overflow: hidden;
@@ -33,17 +49,178 @@ body {
 }
 
 .App-header {
-  background-color: #a8839d;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #000;
-  background: top / cover no-repeat url("image.jpg");
   
-  margin-bottom: 24px;
+  margin: 24px 0;
+
+  position: relative;
+}
+
+.App-header__top {
+  height: 50px;
+  line-height: 50px;
+  font-family: LCChalk;
+  text-wrap: none;
+  font-size: 20px;
+  color: #272526;
+
+  overflow: hidden;
+}
+
+.App-header__body_wrap{
+  padding: 0 32px;
+}
+
+.App-header__body {
+  background: top / contain no-repeat url("Component 3.png");
+  width: 100%;
+}
+
+.ring-pic{
+  width: 33%;
+  margin: 48px auto 32px;
+}
+
+.we-marying__title{
+font-family: BirchCTT;
+font-size: 48px;
+width: 100%;
+color: #3C3C3C;
+}
+.we-marying__subtitle{
+  font-family: LCChalk;
+  font-size: 64px;
+  color: #FF789F;
+}
+
+.we-pic{
+  margin: 42px 0 0;
+  position: relative;
+}
+
+.we-pic img{
+  margin-bottom: -25%;
+}
+
+.guests-text__wrapper{
+  background: center / cover no-repeat url("Ellipse 1.svg");
+  padding: 20px 5% 70px;
+
+  color: #FFE4B3;
+  margin-left: -64px;
+  margin-right: -64px;
+  position: relative;
+  z-index: 1;
+}
+
+.guests-text__title{
+  font-family: LCChalk;
+  font-size: 64px;
+}
+
+.guests-text__text{
+  font-family: BirchCTT;
+  font-size: 36px;
+}
+
+.timing__section-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  font-family: Kosko;
+
+  color: #FF789F;
+  margin-top: 60px;
+}
+
+.timing__section-when_question{
+  font-size: 64px;
+  padding-top: 51px;
+}
+
+.timing__section-when_question span{
+  position: relative;
+}
+
+.timing__section-when_question img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.timing__section-when {
+  display: flex;
+}
+
+.timing__section-when_date{
+  font-size: 128px;
+}
+
+.timing__section-when_my{
+  margin-top: 5px;
+  font-size: 64px;
+  margin-left: 32px;
+}
+
+.timing__section-when-block{
+  margin-top: 30px;
+  max-width: 800px;
+
+  padding: 100px 100px 30px 30px;
+  background: left / contain no-repeat url(whenback.png);
+}
+
+.timing__section-when-block_title{
+  font-family: Kosko;
+  font-size: 64px;
+
+  margin: 0 auto;
+  margin-bottom: 42px;
+  color: #FC470A;
+}
+
+.timing__section-when-block_time {
+  font-family: Kosko;
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+
+  margin-left: 32px;
+}
+
+.timing__section-when-block_time_first {
+  text-align: end;
+  display: flex;
+  align-items: stretch;
+  order: 1;
+
+  flex-basis: 35%;
+  justify-content: end;
+  padding-bottom: 60px;
+}
+
+.timing__section-when-block_time::after {
+  content: '';
+  width: 3px;
+  background-color: #FC470A;
+  margin: 0 20px;
+  align-self: stretch;
+  order: 2;
+}
+
+.timing__section-when-block_time_second{
+  text-align: start;
+  order: 3;
+  flex-basis: 58%;
+  padding-bottom: 60px;
 }
 
 .App-link {
