@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MyWedding/static/css/main.f35ea3d0.css",
+    "main.js": "/MyWedding/static/js/main.07479681.js",
+    "static/media/LCChalk.ttf": "/MyWedding/static/media/LCChalk.a95264b89a85d5beb621.ttf",
+    "static/media/back.jpg": "/MyWedding/static/media/back.bc79df64bdae63137a56.jpg",
+    "static/media/BirchCTT.ttf": "/MyWedding/static/media/BirchCTT.459f26044978fa52e04f.ttf",
+    "static/media/Kosko.ttf": "/MyWedding/static/media/Kosko.94ff8985ae41cf6efdb6.ttf",
+    "static/media/timing_background.png": "/MyWedding/static/media/timing_background.f954d545c6a2710a5e3b.png",
+    "static/media/whenback.png": "/MyWedding/static/media/whenback.279f46e74078c7c90214.png",
+    "index.html": "/MyWedding/index.html",
+    "static/media/unmute.svg": "/MyWedding/static/media/unmute.05efb2e7b686e00dbb3f.svg",
+    "static/media/mute.svg": "/MyWedding/static/media/mute.c39fc702ae9a38ac399e.svg",
+    "static/media/hello_text_back.svg": "/MyWedding/static/media/hello_text_back.8eeba08d609134e37372.svg",
+    "main.f35ea3d0.css.map": "/MyWedding/static/css/main.f35ea3d0.css.map",
+    "main.07479681.js.map": "/MyWedding/static/js/main.07479681.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f35ea3d0.css",
+    "static/js/main.07479681.js"
+  ]
+}
