@@ -7,7 +7,7 @@ import Timing from './components/sections/Timing';
 import Anketa from './components/sections/Anketa';
 import Place from './components/sections/Place';
 import Wishes from './components/sections/Wishes';
-import DressCode from './components/sections/DressCode';
+import DressCode from './components/sections/DressCode/DressCode';
 
 
 function App() {

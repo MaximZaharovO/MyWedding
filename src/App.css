@@ -393,7 +393,6 @@ section:last-child {
 
 .dress_code__section{
   padding: 70px 0 200px;
-
 }
 
 .dress_code__section-title {
@@ -483,10 +482,68 @@ section:last-child {
   font-size: 32px;
   padding: 20px;
 
-  margin-bottom: 72px;
+  margin: 72px 0 ;
 }
 
 .dress_code__section-note-title{
   margin-bottom: 12px;
 }
 
+.dress_code__section-men_info{
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0 40px;
+
+  margin-bottom: 52px;
+}
+
+.dress_code__section-men_info-img{
+  flex-basis: 40%;
+}
+
+.dress_code__section-men_info_description{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  flex-basis: 55%;
+}
+
+.dress_code__section-men_info-description_title{
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.dress_code__section-men_info-description_title-img{
+  margin: 0 20px;
+}
+
+.dress_code__section-men_info-description_title-text{
+  font-family: LCChalk;
+  font-size: 96px;
+  color: #FF789F;
+}
+
+.dress_code__section-men_info-description_wish{
+  width: 100%;
+  font-family: LCChalk;
+  font-size: 40px;
+
+  text-align: left;
+}
+
+.dress_code__section-men_imgs{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  padding: 0 50px;
+}
+
+.dress_code__section-men_imgs > div {
+  padding: 12px;
+}
