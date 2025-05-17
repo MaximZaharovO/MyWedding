@@ -4,16 +4,16 @@
 
 @font-face {
   font-family: LCChalk;
-  src: url(fonts/LCChalk.ttf);
+  src: url(fonts/LCChalk.woff);
 }
 @font-face {
   font-family: BirchCTT;
-  src: url(fonts/BirchCTT.ttf);
+  src: url(fonts/BirchCTT.woff);
 }
 
 @font-face {
   font-family: Kosko;
-  src: url(fonts/Kosko.ttf);
+  src: url(fonts/Kosko.woff);
 }
 
 * {
