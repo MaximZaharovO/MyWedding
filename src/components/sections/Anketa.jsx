@@ -38,7 +38,7 @@ const Anketa = () => {
           bunket: isBunket,
           party: isParty
         }
-        fetch("http://mywedding.somee.com/accepts", {
+        fetch("https://mywedding.somee.com/accepts", {
           method: "POST", 
           body: JSON.stringify(request),
           headers: {
