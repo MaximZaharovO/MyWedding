@@ -1,11 +1,13 @@
+import doveImg from "../../imgs/timing/dove.png"
 import WeddingTiming from '../WeddingTiming';
+
 const Timing = () => {
     return (
         <div className='timing__section'>
             <div className='timing__section-title'>
-            <img style={{width: 136}} src='dove.png'/>
+                <img style={{width: 136}} src={doveImg}/>
             <div className='timing__section-when_question'>
-                К<span>О<img src='love.png'/></span>ГДА?
+                К<span>О<img alt="" src='love.png'/></span>ГДА?
             </div>
             <div className='timing__section-when'>
                 <div className='timing__section-when_date'>19</div>
