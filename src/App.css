@@ -4,16 +4,16 @@
 
 @font-face {
   font-family: LCChalk;
-  src: url(LCChalk.ttf);
+  src: url(fonts/LCChalk.ttf);
 }
 @font-face {
   font-family: BirchCTT;
-  src: url(BirchCTT.ttf);
+  src: url(fonts/BirchCTT.ttf);
 }
 
 @font-face {
   font-family: Kosko;
-  src: url(Kosko.ttf);
+  src: url(fonts/Kosko.ttf);
 }
 
 * {
@@ -77,7 +77,7 @@ body {
 }
 
 .App-header__body {
-  background: top / contain no-repeat url("Component 3.png");
+  background: top / contain no-repeat url("imgs/hello_background.png");
   width: 100%;
 }
 
@@ -108,7 +108,7 @@ color: #3C3C3C;
 }
 
 .guests-text__wrapper{
-  background: center / cover no-repeat url("Ellipse 1.svg");
+  background: center / cover no-repeat url("imgs/hello_text_back.svg");
   padding: 20px 5% 70px;
 
   color: #FFE4B3;
@@ -126,6 +126,10 @@ color: #3C3C3C;
 .guests-text__text{
   font-family: BirchCTT;
   font-size: 36px;
+}
+
+.timing__section {
+  background: center / contain no-repeat url(imgs/timing_background.png);
 }
 
 .timing__section-title{
@@ -173,7 +177,7 @@ color: #3C3C3C;
   max-width: 800px;
 
   padding: 100px 100px 30px 30px;
-  background: left / contain no-repeat url(whenback.png);
+  background: left / contain no-repeat url(imgs/whenback.png);
 }
 
 .timing__section-when-block_title{
@@ -262,12 +266,38 @@ section:last-child {
 }
 
 .mute {
-  background: center / cover no-repeat url("mute.svg");
+  background: center / cover no-repeat url("imgs/mute.svg");
 }
 .unmute {
-  background: center / cover no-repeat url("unmute.svg");
+  background: center / cover no-repeat url("imgs/unmute.svg");
 }
 
 .app-header-back{
-  background: center / cover no-repeat url("back.jpg");
+  background: center / cover no-repeat url("imgs/back.jpg");
+}
+
+
+.section-place {
+  margin-top: 100px;
+
+  padding: 0 20px;
+}
+
+.section-place__title {
+  background: center / contain no-repeat url("imgs/place_title_back.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 200px
+}
+
+.section-place__title-img{
+  margin-right: 13px;
+}
+
+.section-place__title-text{
+  font-size: 48px;
+  font-family: LCChalk;
+  color: #FFF8DC;
 }

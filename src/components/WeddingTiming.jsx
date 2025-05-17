@@ -1,4 +1,4 @@
-const Time = ({}) => { 
+const WeddingTiming = ({}) => { 
     return <>
         <div className='timing__section-when-block_time'>
                 <div className='timing__section-when-block_time_first'>
@@ -52,4 +52,4 @@ const Time = ({}) => {
           </>
 }
 
-export default Time
+export default WeddingTiming
