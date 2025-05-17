@@ -14,15 +14,26 @@ const Anketa = () => {
 
   const [fioInvalid, setFioInvalid] = useState(false)
 
+  const [isLoading, setIsLoading] = useState(false)
+
+  const [result, setResult] = useState("")
+
   function onSubmit(e) {
-    console.log(e)
-    validation()
+    setIsLoading(true)
+    setResult("")
+    if (validation()) {
+      setTimeout(() => {
+        setIsLoading(false)
+        setResult("Мы успешно получили ваш ответ! Если хотите что-то изменить в заполнении анкеты, просто заполните и отправьте её повторно")
+      }, 5000)
+    }
+    
   }
 
   function validation() {
     let invalid = !fio
     setFioInvalid(invalid)
-    return invalid
+    return !invalid
   }
 
   return (
@@ -41,8 +52,10 @@ const Anketa = () => {
         <Checkbox checked={isParty} label={"Смогу присутствовать на вечеринке после банкета"} setIsChecked={setIsParty}/>
         <TextArea value={musicList} setValue={setMusicList} placeholder={"По одной песне на строку"} label={"Здесь можно написать названия песен, которые вам нравятся:"}/>
         <div onClick={onSubmit} className='section_questionnaire_form-submit'>
-          Отправить ответ
+          {isLoading ? <div className="loader"></div>: "Отправить ответ"}
         </div>
+
+        {result && <div style={{textAlign: 'center', marginTop: 40}}>{result}</div>}
       </form>
     </div>
   )
