@@ -14,25 +14,25 @@ const Timer = ({ end }) => {
       return <span>00:00:00:00</span>;
     } else {
       // Render a countdown
-      return <div className='flex'>
-        <div className='mx-3'>
-          <div className='text-5xl mb-1'>{TwoNumber(days)}</div>
-          <div className='text-sm'>Дней</div>
+      return <div style={{display: 'flex'}}>
+        <div style={{margin: '0 12px'}}>
+          <div style={{marginBottom: 8}}>{TwoNumber(days)}</div>
+          <div style={{fontSize: "24px"}}>Дней</div>
         </div>
         <div>:</div>
-        <div className='mx-3'>
-          <div className='text-5xl mb-1'>{TwoNumber(hours)}</div>
-          <div className='text-sm'>Часов</div>
+        <div style={{margin: '0 12px'}}>
+          <div style={{marginBottom: 8}}>{TwoNumber(hours)}</div>
+          <div style={{fontSize: "24px"}}>Часов</div>
         </div>
         <div>:</div>
-        <div className='mx-3'>
-          <div className='text-5xl mb-1'>{TwoNumber(minutes)}</div>
-          <div className='text-sm'>Минут</div>
+        <div style={{margin: '0 12px'}}>
+          <div style={{marginBottom: 8}}>{TwoNumber(minutes)}</div>
+          <div style={{fontSize: "24px"}}>Минут</div>
         </div>
         <div>:</div>
-        <div className='mx-3'>
-          <div className='text-5xl mb-1'>{TwoNumber(seconds)}</div>
-          <div className='text-sm'>Секунд</div>
+        <div style={{margin: '0 12px'}}>
+          <div style={{marginBottom: 8}}>{TwoNumber(seconds)}</div>
+          <div style={{fontSize: "24px"}}>Секунд</div>
         </div>
       </div>;
     }
