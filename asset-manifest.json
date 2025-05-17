@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MyWedding/static/css/main.0182b482.css",
+    "main.css": "/MyWedding/static/css/main.b9733d02.css",
     "main.js": "/MyWedding/static/js/main.c156967b.js",
     "static/media/m.mp3": "/MyWedding/static/media/m.444ff98adc5d493557ff.mp3",
     "static/media/we.png": "/MyWedding/static/media/we.0e6e258fc83f60437717.png",
@@ -17,11 +17,11 @@
     "static/media/unmute.svg": "/MyWedding/static/media/unmute.05efb2e7b686e00dbb3fac47378bf211.svg",
     "static/media/mute.svg": "/MyWedding/static/media/mute.c39fc702ae9a38ac399ee839c787115d.svg",
     "static/media/hello_text_back.svg": "/MyWedding/static/media/hello_text_back.8eeba08d609134e37372.svg",
-    "main.0182b482.css.map": "/MyWedding/static/css/main.0182b482.css.map",
+    "main.b9733d02.css.map": "/MyWedding/static/css/main.b9733d02.css.map",
     "main.c156967b.js.map": "/MyWedding/static/js/main.c156967b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0182b482.css",
+    "static/css/main.b9733d02.css",
     "static/js/main.c156967b.js"
   ]
 }
