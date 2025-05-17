@@ -327,7 +327,7 @@ section:last-child {
   content: '';
   width: 100%;
   height: 20px;
-  background: center / contain url("imgs/wishes/pikes.png");
+  background: bottom / contain repeat-x url("imgs/wishes/pikes.png");
 
   display: block;
   position: absolute;
@@ -340,7 +340,7 @@ section:last-child {
   content: '';
   width: 100%;
   height: 20px;
-  background: center / contain url("imgs/wishes/pikes.png");
+  background: top / contain repeat-x url("imgs/wishes/pikes.png");
 
   display: block;
   position: absolute;
@@ -350,8 +350,7 @@ section:last-child {
 }
 
 .wishes__section-title-wrapper{
-  margin-top: 92px;
-  margin-bottom: 120px;
+  padding: 92px 0 120px;
 }
 
 .wishes__section-title {
@@ -391,3 +390,103 @@ section:last-child {
   margin: 0 auto;
   padding: 85px;
 }
+
+.dress_code__section{
+  padding: 70px 0 200px;
+
+}
+
+.dress_code__section-title {
+  font-size: 64px;
+  font-family: LCChalk;
+  margin-bottom: 50px;
+}
+
+.dress_code__section-info{
+  font-family: Kosko;
+  font-size: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  margin-bottom: 40px;
+}
+
+.dress_code__section-woman_info{
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.dress_code__section-woman_info-img{
+  flex-basis: 40%;
+}
+
+.dress_code__section-woman_info_description{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  flex-basis: 55%;
+}
+
+.dress_code__section-woman_info-description_title{
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.dress_code__section-woman_info-description_title-img{
+  margin: 0 20px;
+}
+
+.dress_code__section-woman_info-description_title-text{
+  font-family: LCChalk;
+  font-size: 96px;
+  color: #FF789F;
+}
+
+.dress_code__section-woman_info-description_wish{
+  width: 100%;
+  font-family: LCChalk;
+  font-size: 40px;
+
+  text-align: right;
+
+  margin-bottom: 142px;
+}
+
+.dress_code__section-woman_info-ideas_button{
+  border-radius: 60px;
+  padding: 20px;
+  background-color: #FF789F;
+
+  font-family: LCChalk;
+  font-size: 32px;
+
+  color: #FFF;
+
+  cursor: pointer;
+  transition: all .2s;
+}
+.dress_code__section-woman_info-ideas_button:hover{
+  background-color: #FC470A;
+}
+
+.dress_code__section-note{
+  background-color: #FF8210;
+  color: #fff;
+
+  font-family: Kosko;
+  font-size: 32px;
+  padding: 20px;
+
+  margin-bottom: 72px;
+}
+
+.dress_code__section-note-title{
+  margin-bottom: 12px;
+}
+

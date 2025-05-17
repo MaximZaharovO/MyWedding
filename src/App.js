@@ -7,6 +7,7 @@ import Timing from './components/sections/Timing';
 import Anketa from './components/sections/Anketa';
 import Place from './components/sections/Place';
 import Wishes from './components/sections/Wishes';
+import DressCode from './components/sections/DressCode';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Timing/>
       <Place/>
       <Wishes/>
+      <DressCode/>
 
       <Anketa/>
       <Timer end={new Date(2025, 6, 19, 13, 20)}/>
