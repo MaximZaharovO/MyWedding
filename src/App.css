@@ -301,3 +301,32 @@ section:last-child {
   font-family: LCChalk;
   color: #FFF8DC;
 }
+
+.section-place__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-place__info-text{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.section-place__info-text > div{
+  margin: 5%;
+  font-family: Kosko;
+  font-size: 36px;
+}
+
+.manya-map{
+  margin: 30px auto;
+
+  border-radius: 20px;
+  border: 15px solid #FF789F;
+  overflow: hidden;
+}
