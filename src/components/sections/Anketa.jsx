@@ -18,14 +18,47 @@ const Anketa = () => {
 
   const [result, setResult] = useState("")
 
+  function BadRequest() {
+    setIsLoading(false)
+    setResult("Не удалось сохранить ваш ответ. Попробуйте повторно")
+  }
+
   function onSubmit(e) {
-    setIsLoading(true)
+    if (isLoading)
+      return;
     setResult("")
     if (validation()) {
-      setTimeout(() => {
-        setIsLoading(false)
-        setResult("Мы успешно получили ваш ответ! Если хотите что-то изменить в заполнении анкеты, просто заполните и отправьте её повторно")
-      }, 5000)
+      setIsLoading(true)
+      try {
+        let request = {
+          name: fio,
+          phoneNumber: phone,
+          songs: musicList,
+          zags: isZags,
+          bunket: isBunket,
+          party: isParty
+        }
+        fetch("http://mywedding.somee.com/accepts", {
+          method: "POST", 
+          body: JSON.stringify(request),
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+          },
+        })
+          .then(result => {
+            if (result.ok) {
+              setIsLoading(false)
+              setResult("Мы успешно получили ваш ответ! Если хотите что-то изменить в заполнении анкеты, просто заполните и отправьте её повторно")
+            } else {
+              BadRequest()
+            }
+          }, () => {
+            BadRequest()
+          })
+      }
+      catch (e) {
+        BadRequest()
+      }
     }
     
   }
