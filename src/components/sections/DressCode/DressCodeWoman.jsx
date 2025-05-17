@@ -19,7 +19,7 @@ export default () => {
                 </div>
             </div>
             <div className='dress_code__section-woman_info-description_wish'>
-                Не ограничивайте себя в креативных и ярких нарядах, дополняйте ваши обзары стильными и акцентными украшениями
+                Не ограничивайте себя в креативных и ярких нарядах, дополняйте ваши образы стильными и акцентными украшениями
             </div>
 
             <a href='https://pin.it/1ZMGFlYnG' target='_blank'  className='dress_code__section-woman_info-ideas_button'>ИДЕИ ДЛЯ ВАШИХ ОБРАЗОВ</a>

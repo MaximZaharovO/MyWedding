@@ -547,3 +547,65 @@ section:last-child {
 .dress_code__section-men_imgs > div {
   padding: 12px;
 }
+
+
+
+.chat__section {
+  background: center / cover no-repeat url("imgs/chat/chat_background.png");
+
+  margin-bottom: 100px;
+
+  font-size: 48px;
+
+  font-family: Kosko;
+
+  padding: 240px 20px;
+}
+
+.chat__section-title {
+  width: fit-content;
+  margin: 0 auto 70px;
+  color: #FFF8DC;
+}
+
+.chat__section-description{
+  margin-bottom: 100px;
+  color: #FFF8DC;
+}
+
+.chat__section_button{
+  background-color: #FFE4B3;
+
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  padding: 10px 30px;
+  width: 600px;
+
+  cursor: pointer;
+
+  transition: all .2s;
+}
+
+.chat__section_button:hover{
+  background-color: #FFDD9F;
+}
+
+.chat__section_button-img {
+  margin-right: 10px;
+}
+
+.chat__section-guests_button {
+  color: #FF789F;
+  margin: 0 auto;
+
+  margin-bottom: 8px;
+}
+
+.chat__section-friends_button {
+  color: #FF8210;
+  margin-left: auto;
+}

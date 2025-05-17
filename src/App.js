@@ -8,6 +8,7 @@ import Anketa from './components/sections/Anketa';
 import Place from './components/sections/Place';
 import Wishes from './components/sections/Wishes';
 import DressCode from './components/sections/DressCode/DressCode';
+import Chat from './components/sections/Chat';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Place/>
       <Wishes/>
       <DressCode/>
+      <Chat/>
 
       <Anketa/>
       <Timer end={new Date(2025, 6, 19, 13, 20)}/>
