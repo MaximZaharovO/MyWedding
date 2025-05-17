@@ -6,6 +6,7 @@ import Hello from './components/sections/Hello';
 import Timing from './components/sections/Timing';
 import Anketa from './components/sections/Anketa';
 import Place from './components/sections/Place';
+import Wishes from './components/sections/Wishes';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Hello/>
       <Timing/>
       <Place/>
+      <Wishes/>
 
       <Anketa/>
       <Timer end={new Date(2025, 6, 19, 13, 20)}/>

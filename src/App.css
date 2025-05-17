@@ -317,3 +317,77 @@ section:last-child {
   border: 15px solid #FF789F;
   overflow: hidden;
 }
+
+.wishes__section{
+  background: #FF789F;
+  position: relative;
+}
+
+.wishes__section::before{
+  content: '';
+  width: 100%;
+  height: 20px;
+  background: center / contain url("imgs/wishes/pikes.png");
+
+  display: block;
+  position: absolute;
+  top: 0;
+
+  transform: translateY(-100%);
+}
+
+.wishes__section::after{
+  content: '';
+  width: 100%;
+  height: 20px;
+  background: center / contain url("imgs/wishes/pikes.png");
+
+  display: block;
+  position: absolute;
+  bottom: 0;
+
+  transform: translateY(100%) rotate(0.5turn);
+}
+
+.wishes__section-title-wrapper{
+  margin-top: 92px;
+  margin-bottom: 120px;
+}
+
+.wishes__section-title {
+  padding: 40px 0;
+
+  border: 4px solid #FFF;
+  border-right: 0;
+  border-left: 0;
+
+  font-family: Kosko;
+  font-size: 64px;
+}
+
+.wishes__section-title_row {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+
+  margin: 16px 0;
+}
+
+.wishes__section-wish{
+  min-width: 900px;
+  font-family: BirchCTT;
+  font-size: 50px;
+
+  margin: 64px 0;
+}
+
+.wishes__section-love__split{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.wishes__section-end__img{
+  width: fit-content;
+  margin: 0 auto;
+  padding: 85px;
+}
