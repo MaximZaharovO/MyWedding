@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/MyWedding/static/css/main.f35ea3d0.css",
-    "main.js": "/MyWedding/static/js/main.07479681.js",
+    "main.css": "/MyWedding/static/css/main.118c7076.css",
+    "main.js": "/MyWedding/static/js/main.cf08c4f0.js",
+    "static/media/m.mp3": "/MyWedding/static/media/m.444ff98adc5d493557ff.mp3",
+    "static/media/we.png": "/MyWedding/static/media/we.0e6e258fc83f60437717.png",
+    "static/media/bogema.png": "/MyWedding/static/media/bogema.1c2d5733950f43098c9d.png",
     "static/media/LCChalk.ttf": "/MyWedding/static/media/LCChalk.a95264b89a85d5beb621.ttf",
-    "static/media/back.jpg": "/MyWedding/static/media/back.bc79df64bdae63137a56.jpg",
+    "static/media/ring.png": "/MyWedding/static/media/ring.77b80f2c13ba76220b0d.png",
     "static/media/BirchCTT.ttf": "/MyWedding/static/media/BirchCTT.459f26044978fa52e04f.ttf",
     "static/media/Kosko.ttf": "/MyWedding/static/media/Kosko.94ff8985ae41cf6efdb6.ttf",
     "static/media/timing_background.png": "/MyWedding/static/media/timing_background.f954d545c6a2710a5e3b.png",
+    "static/media/women-dress.png": "/MyWedding/static/media/women-dress.7b3caf5ba40d10b8fb62.png",
     "static/media/whenback.png": "/MyWedding/static/media/whenback.279f46e74078c7c90214.png",
+    "static/media/dove.png": "/MyWedding/static/media/dove.e19894d4041089874c38.png",
     "index.html": "/MyWedding/index.html",
-    "static/media/unmute.svg": "/MyWedding/static/media/unmute.05efb2e7b686e00dbb3f.svg",
-    "static/media/mute.svg": "/MyWedding/static/media/mute.c39fc702ae9a38ac399e.svg",
+    "static/media/unmute.svg": "/MyWedding/static/media/unmute.05efb2e7b686e00dbb3fac47378bf211.svg",
+    "static/media/mute.svg": "/MyWedding/static/media/mute.c39fc702ae9a38ac399ee839c787115d.svg",
     "static/media/hello_text_back.svg": "/MyWedding/static/media/hello_text_back.8eeba08d609134e37372.svg",
-    "main.f35ea3d0.css.map": "/MyWedding/static/css/main.f35ea3d0.css.map",
-    "main.07479681.js.map": "/MyWedding/static/js/main.07479681.js.map"
+    "main.118c7076.css.map": "/MyWedding/static/css/main.118c7076.css.map",
+    "main.cf08c4f0.js.map": "/MyWedding/static/js/main.cf08c4f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f35ea3d0.css",
-    "static/js/main.07479681.js"
+    "static/css/main.118c7076.css",
+    "static/js/main.cf08c4f0.js"
   ]
 }
