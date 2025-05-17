@@ -1,14 +1,14 @@
 import './App.css';
 import React, {useState, useRef, useEffect} from "react";
-import { Timer } from './components/Timer';
 import Music from './components/sections/Music';
 import Hello from './components/sections/Hello';
-import Timing from './components/sections/Timing';
+import Timing from './components/sections/Timing/Timing';
 import Anketa from './components/sections/Anketa';
 import Place from './components/sections/Place';
 import Wishes from './components/sections/Wishes';
 import DressCode from './components/sections/DressCode/DressCode';
 import Chat from './components/sections/Chat';
+import Wait from './components/sections/WaitFor/Wait';
 
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
       <Wishes/>
       <DressCode/>
       <Chat/>
+      <Wait/>
 
       <Anketa/>
-      <Timer end={new Date(2025, 6, 19, 13, 20)}/>
     </div>
   );
 }

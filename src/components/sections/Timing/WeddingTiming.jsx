@@ -1,8 +1,8 @@
-import gramophoneImg from "../imgs/timing/icons/gramophone.png"
-import cakeImg from "../imgs/timing/icons/cake.png"
-import socialImg from "../imgs/timing/icons/social.png"
-import locationImg from "../imgs/timing/icons/location-pin.png"
-import contractImg from "../imgs/timing/icons/contract.png"
+import gramophoneImg from "../../../imgs/timing/icons/gramophone.png"
+import cakeImg from "../../../imgs/timing/icons/cake.png"
+import socialImg from "../../../imgs/timing/icons/social.png"
+import locationImg from "../../../imgs/timing/icons/location-pin.png"
+import contractImg from "../../../imgs/timing/icons/contract.png"
 
 const WeddingTiming = ({}) => { 
     return <>

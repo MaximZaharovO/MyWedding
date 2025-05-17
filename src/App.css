@@ -609,3 +609,43 @@ section:last-child {
   color: #FF8210;
   margin-left: auto;
 }
+
+.wait__section {
+  margin-bottom: 70px;
+}
+
+.wait__section-title {
+  font-family: Kosko;
+  font-size: 48px;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 76px;
+}
+
+.wait__section-timer {
+  background-color: #FC470A;
+  font-family: Kosko;
+  font-size: 48px;
+  padding: 30px;
+  color: #FFE4B3;
+}
+
+.wait__section-timer > div {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.wait__section-img {
+  max-width: 512px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.wait__section-line {
+  margin: 14px 0;
+
+  height: 10px;
+  width: 100%;
+  background-color: #FFB9B9;
+}

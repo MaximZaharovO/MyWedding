@@ -1,6 +1,6 @@
-import doveImg from "../../imgs/timing/dove.png"
-import WeddingTiming from '../WeddingTiming';
-import loveImg from '../../imgs/love.png'
+import doveImg from "../../../imgs/timing/dove.png"
+import WeddingTiming from './WeddingTiming';
+import loveImg from '../../../imgs/love.png'
 
 const Timing = () => {
     return (
