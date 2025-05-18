@@ -900,16 +900,6 @@ section:last-child {
     font-size: 20px;
   }
 
-  .section-place__info {
-    flex-direction: column;
-  }
-
-  .section-place__info > * {
-    width: 100%;
-    text-align: center;
-    margin: 10px auto;
-  }
-
 }
 
 /*START 450px*/
