@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/MyWedding/static/css/main.9339f7e7.css",
-    "main.js": "/MyWedding/static/js/main.9df57256.js",
+    "main.css": "/MyWedding/static/css/main.27ee48c9.css",
+    "main.js": "/MyWedding/static/js/main.91e7134d.js",
     "static/media/m.mp3": "/MyWedding/static/media/m.444ff98adc5d493557ff.mp3",
     "static/media/mens 2.png": "/MyWedding/static/media/mens 2.d2aa0ae92cc3980da6c1.png",
     "static/media/mens 1.png": "/MyWedding/static/media/mens 1.8f58727ffbf040a306b5.png",
-    "static/media/we.png": "/MyWedding/static/media/we.0e6e258fc83f60437717.png",
+    "static/media/we.png": "/MyWedding/static/media/we.bf959c5d6f69f7d0e37c.png",
     "static/media/bogema.png": "/MyWedding/static/media/bogema.1c2d5733950f43098c9d.png",
     "static/media/LCChalk.woff": "/MyWedding/static/media/LCChalk.a6feb6f3e0df747bd7f8.woff",
     "static/media/ring.png": "/MyWedding/static/media/ring.77b80f2c13ba76220b0d.png",
@@ -21,12 +21,12 @@
     "index.html": "/MyWedding/index.html",
     "static/media/unmute.svg": "/MyWedding/static/media/unmute.05efb2e7b686e00dbb3fac47378bf211.svg",
     "static/media/mute.svg": "/MyWedding/static/media/mute.c39fc702ae9a38ac399ee839c787115d.svg",
-    "static/media/hello_text_back.svg": "/MyWedding/static/media/hello_text_back.8eeba08d609134e37372.svg",
-    "main.9339f7e7.css.map": "/MyWedding/static/css/main.9339f7e7.css.map",
-    "main.9df57256.js.map": "/MyWedding/static/js/main.9df57256.js.map"
+    "static/media/hello_text_back.svg": "/MyWedding/static/media/hello_text_back.8eeba08d609134e37372b0f41019a3d6.svg",
+    "main.27ee48c9.css.map": "/MyWedding/static/css/main.27ee48c9.css.map",
+    "main.91e7134d.js.map": "/MyWedding/static/js/main.91e7134d.js.map"
   },
   "entrypoints": [
-    "static/css/main.9339f7e7.css",
-    "static/js/main.9df57256.js"
+    "static/css/main.27ee48c9.css",
+    "static/js/main.91e7134d.js"
   ]
 }
