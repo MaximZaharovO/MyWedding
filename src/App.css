@@ -452,33 +452,38 @@ section:last-child {
 }
 
 .dress_code__section{
-  padding: 70px 0 200px;
+  padding: 6rem 0 12rem;
 }
 
 .dress_code__section-title {
-  font-size: 64px;
+  font-size: 4rem;
   font-family: LCChalk;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
 .dress_code__section-info{
   font-family: Kosko;
-  font-size: 40px;
-  max-width: 800px;
+  font-size: 2.5rem;
+  max-width: 90%;
   margin: 0 auto;
 
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .dress_code__section-woman_info{
   display: flex;
 
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 2.5rem;
 }
 
 .dress_code__section-woman_info-img{
   flex-basis: 40%;
+  margin-right: 12px;
+}
+
+.dress_code__section-woman_info-img > img {
+  width: 100%;
 }
 
 .dress_code__section-woman_info_description{
@@ -486,6 +491,7 @@ section:last-child {
   flex-direction: column;
   align-items: end;
 
+  max-width: 55%;
   flex-basis: 55%;
 }
 
@@ -498,32 +504,37 @@ section:last-child {
 }
 
 .dress_code__section-woman_info-description_title-img{
-  margin: 0 20px;
+  margin: 0 1.25rem;
+  width: 2.5rem;
+}
+
+.dress_code__section-woman_info-description_title-img > img {
+  width: 100%;
 }
 
 .dress_code__section-woman_info-description_title-text{
   font-family: LCChalk;
-  font-size: 96px;
+  font-size: 6rem;
   color: #FF789F;
 }
 
 .dress_code__section-woman_info-description_wish{
   width: 100%;
   font-family: LCChalk;
-  font-size: 40px;
+  font-size: 2.5rem;
 
   text-align: right;
 
-  margin-bottom: 142px;
+  margin-bottom: 9rem;
 }
 
 .dress_code__section-woman_info-ideas_button{
   border-radius: 60px;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #FF789F;
 
   font-family: LCChalk;
-  font-size: 32px;
+  font-size: 2rem;
 
   color: #FFF;
 
@@ -539,10 +550,10 @@ section:last-child {
   color: #fff;
 
   font-family: Kosko;
-  font-size: 32px;
+  font-size: 2rem;
   padding: 20px;
 
-  margin: 72px 0 ;
+  margin: 4.5rem 0 ;
 }
 
 .dress_code__section-note-title{
@@ -553,13 +564,18 @@ section:last-child {
   display: flex;
 
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 2.5rem;
 
-  margin-bottom: 52px;
+  margin-bottom: 3.25rem;
 }
 
 .dress_code__section-men_info-img{
-  flex-basis: 40%;
+  flex-basis: 30%;
+  margin-right: 12px;
+}
+
+.dress_code__section-men_info-img > img {
+  width: 100%;
 }
 
 .dress_code__section-men_info_description{
@@ -575,61 +591,69 @@ section:last-child {
 
   align-items: center;
 
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+.dress_code__section-men_info-description_title-img{
+  margin: 0 1.25rem;
+  width: 2.5rem;
 }
 
-.dress_code__section-men_info-description_title-img{
-  margin: 0 20px;
+.dress_code__section-men_info-description_title-img > img {
+  width: 100%;
 }
 
 .dress_code__section-men_info-description_title-text{
   font-family: LCChalk;
-  font-size: 96px;
+  font-size: 6rem;
   color: #FF789F;
 }
 
 .dress_code__section-men_info-description_wish{
   width: 100%;
   font-family: LCChalk;
-  font-size: 40px;
+  font-size: 2.5rem;
 
   text-align: left;
 }
 
 .dress_code__section-men_imgs{
   display: flex;
-  align-items: stretch;
+  align-items: start;
   justify-content: space-between;
 
-  padding: 0 50px;
+  padding: 0 2.5rem;
+  width: 100%;
 }
 
 .dress_code__section-men_imgs > div {
-  padding: 12px;
+  padding: 0.75rem;
+  width: 45%;
 }
 
-
+.dress_code__section-men_imgs img {
+  width: 100%;
+}
 
 .chat__section {
   background: center / cover no-repeat url("imgs/chat/chat_background.png");
 
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 
-  font-size: 48px;
+  font-size: 3rem;
 
   font-family: Kosko;
 
-  padding: 240px 20px;
+  padding: 15rem 1.25rem;
 }
 
 .chat__section-title {
   width: fit-content;
-  margin: 0 auto 70px;
+  margin: 0 auto 4rem;
   color: #FFF8DC;
 }
 
 .chat__section-description{
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
   color: #FFF8DC;
 }
 
@@ -642,8 +666,8 @@ section:last-child {
   justify-content: center;
 
   width: fit-content;
-  padding: 10px 30px;
-  width: 600px;
+  padding: 0.75rem 2rem;
+  width: 60%;
 
   cursor: pointer;
 
@@ -655,14 +679,14 @@ section:last-child {
 }
 
 .chat__section_button-img {
-  margin-right: 10px;
+  margin-right: 0.75rem;
 }
 
 .chat__section-guests_button {
   color: #FF789F;
   margin: 0 auto;
 
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .chat__section-friends_button {
@@ -671,22 +695,22 @@ section:last-child {
 }
 
 .wait__section {
-  margin-bottom: 70px;
+  margin-bottom: 4rem;
 }
 
 .wait__section-title {
   font-family: Kosko;
-  font-size: 48px;
+  font-size: 3rem;
   margin: 0 auto;
   width: fit-content;
-  margin-bottom: 76px;
+  margin-bottom: 4rem;
 }
 
 .wait__section-timer {
   background-color: #FC470A;
   font-family: Kosko;
-  font-size: 48px;
-  padding: 30px;
+  font-size: 3rem;
+  padding: 2rem;
   color: #FFE4B3;
 }
 
@@ -696,10 +720,14 @@ section:last-child {
 }
 
 .wait__section-img {
-  max-width: 512px;
-  padding: 20px;
+  max-width: 50%;
+  padding: 1.25rem;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+.wait__section-img img {
+  width: 100%;
 }
 
 .wait__section-line {
@@ -712,28 +740,28 @@ section:last-child {
 
 .section_questionnaire{
   margin: 0 10%;
-  padding: 90px 5%;
-  margin-bottom: 80px;
+  padding: 6rem 5%;
+  margin-bottom: 6rem;
 
   background-color: #FFB9B9;
   color: #fff;
 
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: Kosko;
 }
 
 .section_questionnaire-title{
   font-family: Kosko;
-  font-size: 64px;
+  font-size: 4rem;
 
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .section_questionnaire-subtitle{
   font-family: BirchCTT;
-  font-size: 40px;
+  font-size: 2.5rem;
 
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .section_questionnaire_form {
@@ -741,21 +769,21 @@ section:last-child {
 }
 
 .section_questionnaire_form > * {
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 .section_questionnaire_form > label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 0.25rem;
 }
 
 .section_questionnaire_form-submit{
   text-align: center;
   border-radius: 60px;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #FC470A;
 
   font-family: LCChalk;
-  font-size: 32px;
+  font-size: 2rem;
 
   color: #FFF;
 
@@ -829,7 +857,7 @@ section:last-child {
 
 /*START 600px*/
 
-@media (max-width: 600px)  {
+@media (max-width: 650px)  {
   html {
     font-size: 8px
   }
@@ -884,7 +912,7 @@ section:last-child {
 
 }
 
-/*START 600px*/
+/*START 450px*/
 
 @media (max-width: 450px)  {
   html {
@@ -892,4 +920,4 @@ section:last-child {
   }
 }
 
-/*END 600px*/
+/*END 450px*/
