@@ -69,6 +69,10 @@ body {
   overflow: hidden;
 }
 
+.App-header__top > span {
+  margin: 0 12px;
+}
+
 .App-header__body_wrap{
   padding: 0 32px;
 }
@@ -81,6 +85,10 @@ body {
 .ring-pic{
   width: 33%;
   margin: 48px auto 32px;
+}
+
+.ring-pic > img {
+  width: 100%;
 }
 
 .we-marying__title{
@@ -102,11 +110,11 @@ color: #3C3C3C;
 
 .we-pic img{
   margin-bottom: -25%;
+  width: 95%;
 }
 
 .guests-text__wrapper{
-  background: center / cover no-repeat url("imgs/hello/hello_text_back.svg");
-  padding: 20px 5% 70px;
+  padding: 40px 48px 70px;
 
   color: #FFE4B3;
   margin-left: -64px;
@@ -115,14 +123,25 @@ color: #3C3C3C;
   z-index: 1;
 }
 
+.guests-text__wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
 .guests-text__title{
   font-family: LCChalk;
   font-size: 64px;
+  margin-bottom: 12px;
 }
 
 .guests-text__text{
   font-family: BirchCTT;
-  font-size: 36px;
+  font-size: 32px;
+
+  padding: 5px;
 }
 
 .timing__section {
@@ -713,3 +732,73 @@ section:last-child {
   margin: 0 auto;
 }
 @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+
+@media (max-width: 1000px) {
+  .guests-text__title {
+    font-size: 48px;
+  }
+
+  .guests-text__text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 800px)  {
+  .we-marying__title {
+    font-size: 36px;
+  }
+
+  .we-marying__subtitle {
+    font-size: 48px;
+  }
+
+  .guests-text__wrapper {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .guests-text__wrapper > img {
+    width: calc(100% + 200px);
+    left: -100px;
+  }
+}
+
+@media (max-width: 600px)  {
+  .App-header__top {
+    font-size: 12px;
+  }
+
+  .ring-pic {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .we-marying__title {
+    font-size: 24px;
+  }
+
+  .we-marying__subtitle {
+    font-size: 32px;
+  }
+
+  .guests-text__wrapper {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+
+  .guests-text__wrapper > img {
+    display: none;
+  }
+
+  .guests-text__wrapper{
+    background: center / cover no-repeat url("imgs/hello/hello_text_back.svg");
+  }
+
+  .guests-text__title {
+    font-size: 36px;
+  }
+
+  .guests-text__text {
+    font-size: 20px;
+  }
+}

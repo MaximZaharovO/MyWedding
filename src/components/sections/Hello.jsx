@@ -1,14 +1,15 @@
 import weImg from "../../imgs/hello/we.png"
 import ringImg from "../../imgs/hello/ring.png"
+import textBack from "../../imgs/hello/hello_text_back.svg"
 
 const Hello = () => {
     return (
         <div className="App-header">
             <div className='App-header__top'>
-            <span className='mx-2'>Все начинается с любви</span>
-            <span className='mx-2'>Все начинается с любви</span>
-            <span className='mx-2'>Все начинается с любви</span>
-            <span className='mx-2'>Все начинается с любви</span>
+            <span>Все начинается с любви</span>
+            <span>Все начинается с любви</span>
+            <span>Все начинается с любви</span>
+            <span>Все начинается с любви</span>
             </div>
             <div className='App-header__body_wrap'>
             <div className='App-header__body'>
@@ -20,6 +21,7 @@ const Hello = () => {
                 <div className='we-pic'>
                     <img alt="" src={weImg}/>
                 <div className='guests-text__wrapper'>
+                    <img src={textBack}/>
                     <div className='guests-text__title'>Дорогие гости!</div>
                     <div className='guests-text__text'>
                     Судьба дарит нам самый важный день в жизни — день, когда мы станем семьёй! 
