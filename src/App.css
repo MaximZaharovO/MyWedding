@@ -53,7 +53,7 @@ body {
   font-size: calc(10px + 2vmin);
   color: #000;
   
-  margin: 24px 0;
+  margin: 0 0;
 
   position: relative;
 }
@@ -151,6 +151,7 @@ color: #3C3C3C;
 .timing__section-title{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 80px;
   font-family: Kosko;
 
@@ -159,8 +160,8 @@ color: #3C3C3C;
 }
 
 .timing__section-when_question{
-  font-size: 64px;
-  padding-top: 51px;
+  font-size: 4rem;
+  padding-top: 3.5rem;
 }
 
 .timing__section-when_question span{
@@ -179,41 +180,58 @@ color: #3C3C3C;
 }
 
 .timing__section-when_date{
-  font-size: 128px;
+  font-size: 8rem;
 }
 
 .timing__section-when_my{
   margin-top: 5px;
-  font-size: 64px;
-  margin-left: 32px;
+  font-size: 4rem;
+  margin-left: 2rem;
 }
 
-.timing__section-when-block{
-  margin-top: 30px;
-  max-width: 800px;
+.timing__section-when-block {
+    margin-top: 30px;
+    max-width: 800px;
+    padding: 7rem 0 4rem 2rem;
+    margin-right: auto;
+    width: fit-content;
+    position: relative;
+}
 
-  padding: 100px 100px 30px 30px;
-  background: left / contain no-repeat url(imgs/place/whenback.png);
+.timing__section-when-block > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+.timing__section-when-block > div{
+  z-index: 1;
+  position: relative;
 }
 
 .timing__section-when-block_title{
   font-family: Kosko;
-  font-size: 64px;
+  font-size: 4rem;
 
-  margin: 0 auto;
-  margin-bottom: 42px;
+  margin: 3rem 0 3rem auto;
   color: #FC470A;
 }
 
 .timing__section-when-block_time {
   font-family: Kosko;
-  font-size: 32px;
+  font-size: 2rem;
 
   display: flex;
   align-items: center;
   max-width: 600px;
 
   margin-left: 32px;
+}
+
+.timing__section-when-block_time img {
+  width: 7rem;
 }
 
 .timing__section-when-block_time_first {
@@ -224,7 +242,7 @@ color: #3C3C3C;
 
   flex-basis: 35%;
   justify-content: end;
-  padding-bottom: 60px;
+  padding-bottom: 3rem;
 }
 
 .timing__section-when-block_time::after {
@@ -240,7 +258,7 @@ color: #3C3C3C;
   text-align: start;
   order: 3;
   flex-basis: 58%;
-  padding-bottom: 60px;
+  padding-bottom: 3rem;
 }
 
 .App-link {
@@ -271,6 +289,7 @@ section:last-child {
 }
 
 .playbtn{
+  display: none;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -281,9 +300,9 @@ section:last-child {
 }
 
 .section-place {
-  margin: 100px 0 150px;
+  margin: 7rem 0 12rem;
 
-  padding: 0 20px;
+  padding: 0 1.3rem;
 }
 
 .section-place__title {
@@ -292,7 +311,7 @@ section:last-child {
   align-items: center;
   justify-content: center;
 
-  padding: 100px 200px
+  padding: 7rem 5rem;
 }
 
 .section-place__title-img{
@@ -300,14 +319,30 @@ section:last-child {
 }
 
 .section-place__title-text{
-  font-size: 48px;
+  font-size: 3rem;
   font-family: LCChalk;
   color: #FFF8DC;
+}
+
+.section-place__title-img {
+  width: 5rem;
+}
+
+.section-place__title-img > img {
+  width: 100%;
 }
 
 .section-place__info {
   display: flex;
   justify-content: space-between;
+}
+
+.section-place__info > * {
+  width: 49%;
+}
+
+.section-place__info-img > img {
+  width: 100%;
 }
 
 .section-place__info-text{
@@ -316,18 +351,17 @@ section:last-child {
 
   justify-content: center;
 
-  margin: 0 auto;
   max-width: 450px;
 }
 
 .section-place__info-text > div{
-  margin: 5%;
+  margin: 0.75rem;
   font-family: Kosko;
-  font-size: 36px;
+  font-size: 2.2rem;
 }
 
 .manya-map{
-  margin: 30px auto;
+  margin: 2rem auto;
 
   border-radius: 20px;
   border: 15px solid #FF789F;
@@ -339,45 +373,47 @@ section:last-child {
   position: relative;
 }
 
-.wishes__section::before{
-  content: '';
+.wishes__section-pikes-before{
   width: 100%;
-  height: 20px;
-  background: bottom / contain repeat-x url("imgs/wishes/pikes.png");
 
   display: block;
   position: absolute;
   top: 0;
 
-  transform: translateY(-100%);
+  transform: translateY(-80%);
 }
 
-.wishes__section::after{
-  content: '';
+.wishes__section-pikes-before > img {
   width: 100%;
-  height: 20px;
-  background: top / contain repeat-x url("imgs/wishes/pikes.png");
+}
+
+.wishes__section-pikes-after{
+  width: 100%;
 
   display: block;
   position: absolute;
   bottom: 0;
 
-  transform: translateY(100%) rotate(0.5turn);
+  transform: translateY(80%) rotate(0.5turn);
+}
+
+.wishes__section-pikes-after > img {
+  width: 100%;
 }
 
 .wishes__section-title-wrapper{
-  padding: 92px 0 120px;
+  padding: 5.75rem 0 7.5rem;
 }
 
 .wishes__section-title {
-  padding: 40px 0;
+  padding: 2.5rem 0;
 
   border: 4px solid #FFF;
   border-right: 0;
   border-left: 0;
 
   font-family: Kosko;
-  font-size: 64px;
+  font-size: 4rem;
 }
 
 .wishes__section-title_row {
@@ -385,26 +421,34 @@ section:last-child {
   height: 3px;
   background-color: #fff;
 
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .wishes__section-wish{
-  min-width: 900px;
   font-family: BirchCTT;
-  font-size: 50px;
+  font-size: 3rem;
 
-  margin: 64px 0;
+  margin: 4rem 10%;
 }
 
 .wishes__section-love__split{
   margin: 0 auto;
+  padding: 0 10%;
   width: fit-content;
+}
+
+.wishes__section-love__split > img {
+  width: 100%;
 }
 
 .wishes__section-end__img{
   width: fit-content;
   margin: 0 auto;
-  padding: 85px;
+  padding: 5rem 1.5rem;
+}
+
+.wishes__section-end__img > img {
+  width: 100%;
 }
 
 .dress_code__section{
@@ -733,7 +777,14 @@ section:last-child {
 }
 @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
 
+/*START 1000px*/
+
 @media (max-width: 1000px) {
+
+  html {
+    font-size: 12px;
+  }
+
   .guests-text__title {
     font-size: 48px;
   }
@@ -741,7 +792,19 @@ section:last-child {
   .guests-text__text {
     font-size: 24px;
   }
+
+  .timing__section-title {
+    padding: 0 40px;
+  }
+
+  .timing__section {
+    font-size: 12px;
+  }
 }
+
+/*END 1000px*/
+
+/*START 800px*/
 
 @media (max-width: 800px)  {
   .we-marying__title {
@@ -762,8 +825,15 @@ section:last-child {
     left: -100px;
   }
 }
+/*END 800px*/
+
+/*START 600px*/
 
 @media (max-width: 600px)  {
+  html {
+    font-size: 8px
+  }
+
   .App-header__top {
     font-size: 12px;
   }
@@ -778,7 +848,7 @@ section:last-child {
   }
 
   .we-marying__subtitle {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .guests-text__wrapper {
@@ -801,4 +871,25 @@ section:last-child {
   .guests-text__text {
     font-size: 20px;
   }
+
+  .section-place__info {
+    flex-direction: column;
+  }
+
+  .section-place__info > * {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
 }
+
+/*START 600px*/
+
+@media (max-width: 450px)  {
+  html {
+    font-size: 6px;
+  }
+}
+
+/*END 600px*/
