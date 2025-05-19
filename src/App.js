@@ -11,16 +11,19 @@ import Chat from './components/sections/Chat';
 import Wait from './components/sections/WaitFor/Wait';
 import "animate.css/animate.compat.css"
 import ScrollAnimation from 'react-animate-on-scroll';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
+
+  const [isFriend, setIsFriend] = useState(false)
+
+  useEffect(() => {
+    let params = new URLSearchParams(document.location.search);
+    let friends = params.get("friends");
+    setIsFriend(friends !== null)
+  }, [])
+
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Page isFriends={false}/>} />
-        <Route path='/friends' element={<Page isFriends={true}/>} />
-      </Routes>
-    </Router>
+    <Page isFriends={isFriend}/>
   );
 }
 
