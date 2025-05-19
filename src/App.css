@@ -433,8 +433,7 @@ section:last-child {
 
 .wishes__section-love__split{
   margin: 0 auto;
-  padding: 0 10%;
-  width: fit-content;
+  width: 35%;
 }
 
 .wishes__section-love__split > img {

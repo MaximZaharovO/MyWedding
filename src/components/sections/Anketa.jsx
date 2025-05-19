@@ -82,7 +82,7 @@ const Anketa = () => {
         <Input value={phone} setValue={setPhone} placeholder={"+7 (999) 999 99-99"} label={"Введите ваш номер телефона:"}/>
         <Checkbox checked={isZags} label={"Смогу присутствовать в ЗАГСе"} setIsChecked={setIsZags}/>
         <Checkbox checked={isBunket} label={"Смогу присутствовать на банкете"} setIsChecked={setIsBunket}/>
-        <Checkbox checked={isParty} label={"Смогу присутствовать на вечеринке после банкета"} setIsChecked={setIsParty}/>
+        <Checkbox checked={isParty} label={"Смогу присутствовать на вечеринке для друзей после банкета"} setIsChecked={setIsParty}/>
         <TextArea value={musicList} setValue={setMusicList} placeholder={"По одной песне на строку"} label={"Здесь можно написать названия песен, которые вам нравятся:"}/>
         <div onClick={onSubmit} className='section_questionnaire_form-submit'>
           {isLoading ? <div className="loader"></div>: "Отправить ответ"}
