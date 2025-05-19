@@ -9,6 +9,8 @@ import Wishes from './components/sections/Wishes';
 import DressCode from './components/sections/DressCode/DressCode';
 import Chat from './components/sections/Chat';
 import Wait from './components/sections/WaitFor/Wait';
+import "animate.css/animate.compat.css"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 function App() {
@@ -16,15 +18,31 @@ function App() {
   return (
     <div class="App">
       <Music/>
-      <Hello/>
-      <Timing/>
+      <ScrollAnimation animateIn="zoomIn">
+        <Hello/>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Timing/>
+      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
       <Place/>
+      </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn">
       <Wishes/>
+        </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
       <DressCode/>
+        </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
       <Chat/>
-      <Wait/>
+        </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Wait/>
+      </ScrollAnimation>
 
-      <Anketa/>
+      <ScrollAnimation animateIn="fadeIn">
+        <Anketa/>
+      </ScrollAnimation>
     </div>
   );
 }
