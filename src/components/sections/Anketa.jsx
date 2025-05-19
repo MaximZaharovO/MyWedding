@@ -7,11 +7,13 @@ import Radiobutton from "../Radiobutton/Radiobutton";
 
 const Anketa = () => {
   const [fio, setFio] = useState("")
-  const [phone, setPhone] = useState("")
+  const [secondName, setSecondName] = useState("")
   const [musicList, setMusicList] = useState("")
   const [isZags, setIsZags] = useState(false);
   const [isBunket, setIsBunket] = useState(false);
   const [isParty, setIsParty] = useState(false);
+  const [salad, setSalad] = useState("")
+  const [hotDish, setHotDish] = useState("")
 
   const [fioInvalid, setFioInvalid] = useState(false)
 
@@ -33,11 +35,13 @@ const Anketa = () => {
       try {
         let request = {
           name: fio,
-          phoneNumber: phone,
+          secondName: secondName,
           songs: musicList,
           zags: isZags,
           bunket: isBunket,
-          party: isParty
+          party: isParty,
+          salad,
+          hotDish
         }
         fetch("https://mywedding.somee.com/accepts", {
           method: "POST", 
@@ -80,18 +84,18 @@ const Anketa = () => {
       </div>
       <form className="section_questionnaire_form">
         <Input invalid={fioInvalid} value={fio} setValue={setFio} placeholder={"Имя"} label={"Введите ваше имя:"}/>
-        <Input value={phone} setValue={setPhone} placeholder={"Фамилия"} label={"Введите вашу фамилию:"}/>
+        <Input value={secondName} setValue={setSecondName} placeholder={"Фамилия"} label={"Введите вашу фамилию:"}/>
         <Checkbox checked={isZags} label={"Смогу присутствовать в ЗАГСе"} setIsChecked={setIsZags}/>
         <Checkbox checked={isBunket} label={"Смогу присутствовать на банкете"} setIsChecked={setIsBunket}/>
         <Checkbox checked={isParty} label={"Смогу присутствовать на вечеринке для друзей после банкета"} setIsChecked={setIsParty}/>
         <TextArea value={musicList} setValue={setMusicList} placeholder={"По одной песне на строку"} label={"Здесь можно написать названия песен, которые вам нравятся:"}/>
         <div>Мы хотим, чтобы вы выбрали для себя блюда на банкет</div>
         <div>Салат</div>
-        <Radiobutton checked={isParty} label={"Овощной салат с сыром страчателла"} setIsChecked={setIsParty}/>
-        <Radiobutton checked={isParty} label={"Салат с хрустящими баклажанами"} setIsChecked={setIsParty}/>
+          <Radiobutton setLabel={setSalad} name="salad" label={"Овощной салат с сыром страчателла"} />
+          <Radiobutton setLabel={setSalad} name="salad" label={"Салат с хрустящими баклажанами"} />
         <div>Горячее</div>
-        <Radiobutton checked={isParty} label={"Свинная корейка с жаренным картофелем и чесночным соусом"} setIsChecked={setIsParty}/>
-        <Radiobutton checked={isParty} label={"Бефстроганов с картофельным пюре"} setIsChecked={setIsParty}/>
+          <Radiobutton setLabel={setHotDish} name="hotdish" label={"Свинная корейка с жаренным картофелем и чесночным соусом"} />
+          <Radiobutton setLabel={setHotDish} name="hotdish" label={"Бефстроганов с картофельным пюре"} />
         <div onClick={onSubmit} className='section_questionnaire_form-submit'>
           {isLoading ? <div className="loader"></div>: "Отправить ответ"}
         </div>
