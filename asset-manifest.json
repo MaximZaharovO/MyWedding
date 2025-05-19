@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/MyWedding/static/css/main.b5e217fb.css",
-    "main.js": "/MyWedding/static/js/main.bfc8fe54.js",
-    "static/media/m.mp3": "/MyWedding/static/media/m.444ff98adc5d493557ff.mp3",
+    "main.css": "/MyWedding/static/css/main.63106133.css",
+    "main.js": "/MyWedding/static/js/main.6bed8fb8.js",
+    "static/media/Tram.mp3": "/MyWedding/static/media/Tram.2701a15f2f06e6da34cd.mp3",
     "static/media/mens 2.png": "/MyWedding/static/media/mens 2.d2aa0ae92cc3980da6c1.png",
     "static/media/mens 1.png": "/MyWedding/static/media/mens 1.8f58727ffbf040a306b5.png",
     "static/media/we.png": "/MyWedding/static/media/we.bf959c5d6f69f7d0e37c.png",
@@ -14,6 +14,7 @@
     "static/media/Kosko.woff": "/MyWedding/static/media/Kosko.c354fea0db312a99628c.woff",
     "static/media/timing_background.png": "/MyWedding/static/media/timing_background.f954d545c6a2710a5e3b.png",
     "static/media/women-dress.png": "/MyWedding/static/media/women-dress.7b3caf5ba40d10b8fb62.png",
+    "static/media/volume.png": "/MyWedding/static/media/volume.b67e1b47c4a6028ab5f1.png",
     "static/media/chat_background.png": "/MyWedding/static/media/chat_background.55014a48d6fd5ddbf0a7.png",
     "static/media/whenback.png": "/MyWedding/static/media/whenback.279f46e74078c7c90214.png",
     "static/media/dove.png": "/MyWedding/static/media/dove.e19894d4041089874c38.png",
@@ -22,11 +23,11 @@
     "static/media/unmute.svg": "/MyWedding/static/media/unmute.05efb2e7b686e00dbb3fac47378bf211.svg",
     "static/media/mute.svg": "/MyWedding/static/media/mute.c39fc702ae9a38ac399ee839c787115d.svg",
     "static/media/hello_text_back.svg": "/MyWedding/static/media/hello_text_back.8eeba08d609134e37372b0f41019a3d6.svg",
-    "main.b5e217fb.css.map": "/MyWedding/static/css/main.b5e217fb.css.map",
-    "main.bfc8fe54.js.map": "/MyWedding/static/js/main.bfc8fe54.js.map"
+    "main.63106133.css.map": "/MyWedding/static/css/main.63106133.css.map",
+    "main.6bed8fb8.js.map": "/MyWedding/static/js/main.6bed8fb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5e217fb.css",
-    "static/js/main.bfc8fe54.js"
+    "static/css/main.63106133.css",
+    "static/js/main.6bed8fb8.js"
   ]
 }
