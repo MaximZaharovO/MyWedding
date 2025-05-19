@@ -1,5 +1,7 @@
 import loveImg from '../../../imgs/love.png'
 import womenDressCode from '../../../imgs/dress-code/women-dress.png'
+import clickImg from '../../../imgs/dress-code/click.png'
+
 
 export default () => {
     return <div className="dress_code__section-woman_info">
@@ -23,6 +25,7 @@ export default () => {
             </div>
 
             <a href='https://pin.it/1ZMGFlYnG' target='_blank'  className='dress_code__section-woman_info-ideas_button'>ИДЕИ ДЛЯ ВАШИХ ОБРАЗОВ</a>
+            <img style={{width: '50%', margin: '0 auto'}} src={clickImg} alt="" />
         </div>
     </div>
 }

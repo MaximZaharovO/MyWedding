@@ -292,7 +292,7 @@ section:last-child {
 .playbtn{
   /* display: none; */
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   right: 1.5rem;
   cursor: pointer;
 
