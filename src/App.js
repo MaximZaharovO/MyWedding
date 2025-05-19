@@ -11,18 +11,30 @@ import Chat from './components/sections/Chat';
 import Wait from './components/sections/WaitFor/Wait';
 import "animate.css/animate.compat.css"
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-
   return (
-    <div class="App">
+    <Router>
+      <Routes>
+        <Route path='/' element={<Page isFriends={false}/>} />
+        <Route path='/friends' element={<Page isFriends={true}/>} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+
+const Page = ({isFriends}) => {
+  return <div class="App">
       <Music/>
       <ScrollAnimation animateIn="zoomIn">
         <Hello/>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn">
-        <Timing/>
+        <Timing isFriends={isFriends}/>
       </ScrollAnimation>
         <ScrollAnimation animateIn="fadeIn">
       <Place/>
@@ -34,17 +46,14 @@ function App() {
       <DressCode/>
         </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn">
-      <Chat/>
+      <Chat isFriends={isFriends}/>
         </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn">
         <Wait/>
       </ScrollAnimation>
 
       <ScrollAnimation animateIn="fadeIn">
-        <Anketa/>
+        <Anketa isFriends={isFriends}/>
       </ScrollAnimation>
     </div>
-  );
 }
-
-export default App;

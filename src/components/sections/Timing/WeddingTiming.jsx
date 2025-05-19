@@ -4,7 +4,7 @@ import socialImg from "../../../imgs/timing/icons/social.png"
 import locationImg from "../../../imgs/timing/icons/location-pin.png"
 import contractImg from "../../../imgs/timing/icons/contract.png"
 
-const WeddingTiming = ({}) => { 
+const WeddingTiming = ({isFriends}) => { 
     return <>
         <div className='timing__section-when-block_time'>
             <div className='timing__section-when-block_time_first'>
@@ -46,7 +46,7 @@ const WeddingTiming = ({}) => {
                     <img alt="" src={gramophoneImg}/>
                 </div>
             </div>
-            <div className='timing__section-when-block_time'>
+            {isFriends && <div className='timing__section-when-block_time'>
                 <div className='timing__section-when-block_time_first'>
                     <img alt="" src={locationImg}/>
                 </div>
@@ -54,7 +54,8 @@ const WeddingTiming = ({}) => {
                     <div className='timing__section-when-block_time--time'>22:00</div>
                     <div className='timing__section-when-block_time--title'>Афтепати</div>
                 </div>
-            </div>
+            </div>}
+            
           </>
 }
 

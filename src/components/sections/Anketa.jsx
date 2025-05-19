@@ -5,7 +5,7 @@ import Input from "../Input/Input";
 import TextArea from "../TextArea/TextArea";
 import Radiobutton from "../Radiobutton/Radiobutton";
 
-const Anketa = () => {
+const Anketa = ({isFriends}) => {
   const [fio, setFio] = useState("")
   const [secondName, setSecondName] = useState("")
   const [musicList, setMusicList] = useState("")
@@ -87,7 +87,7 @@ const Anketa = () => {
         <Input value={secondName} setValue={setSecondName} placeholder={"Фамилия"} label={"Введите вашу фамилию:"}/>
         <Checkbox checked={isZags} label={"Смогу присутствовать в ЗАГСе"} setIsChecked={setIsZags}/>
         <Checkbox checked={isBunket} label={"Смогу присутствовать на банкете"} setIsChecked={setIsBunket}/>
-        <Checkbox checked={isParty} label={"Смогу присутствовать на вечеринке для друзей после банкета"} setIsChecked={setIsParty}/>
+        {isFriends && <Checkbox checked={isParty} label={"Смогу присутствовать на вечеринке для друзей после банкета"} setIsChecked={setIsParty}/>}
         <TextArea value={musicList} setValue={setMusicList} placeholder={"По одной песне на строку"} label={"Здесь можно написать названия песен, которые вам нравятся:"}/>
         <div>Мы хотим, чтобы вы выбрали для себя блюда на банкет</div>
         <div>Салат</div>

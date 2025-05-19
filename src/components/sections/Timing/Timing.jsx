@@ -3,7 +3,7 @@ import WeddingTiming from './WeddingTiming';
 import loveImg from '../../../imgs/love.png'
 import whenBack from "../../../imgs/place/whenback.png"
 
-const Timing = () => {
+const Timing = ({isFriends}) => {
     return (
         <div className='timing__section'>
             <div className='timing__section-title'>
@@ -27,7 +27,7 @@ const Timing = () => {
                     justifyItems: 'center'
                 }}>
                     <div className='timing__section-when-block_title'>ВО СКОЛЬКО?</div>
-                    <WeddingTiming/>
+                    <WeddingTiming isFriends={isFriends}/>
                 </div>
             </div>
         </div>

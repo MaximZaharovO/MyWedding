@@ -1,6 +1,6 @@
 import chatImg from "../../imgs/chat/chat-icon.svg"
 
-const Chat = () => {
+const Chat = ({isFriends}) => {
     return (
         <div className="chat__section">
             <div className="chat__section-title">
@@ -15,12 +15,12 @@ const Chat = () => {
                 </span>
                 Чат для гостей
             </a>
-            <a target="_blank" href="https://t.me/+zpEp3ShsaoEzYzdi" className="chat__section-friends_button chat__section_button">
+            {isFriends && <a target="_blank" href="https://t.me/+zpEp3ShsaoEzYzdi" className="chat__section-friends_button chat__section_button">
                 <span className="chat__section_button-img">
                     <img src={chatImg}/>
                 </span>
                 Чатик для друзей
-            </a>
+            </a>}
         </div>
     )
 }
